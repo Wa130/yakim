@@ -72,6 +72,8 @@ nav-bar ul li a {
   color: white;
   padding: 1rem 1.5rem;
   text-decoration: none;
+
+  font-size: 1vw;
 }
 
 nav-bar ul li a:hover {
