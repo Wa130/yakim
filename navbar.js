@@ -30,7 +30,7 @@ function highlightActive() {
 		}
 	});
 
-    if (current == "/" || current == "") {
+    if (!current.endsWith(".html")) {
         document.getElementById("nav_default").id = ACTIVE_CLASS;
     }
 }
@@ -38,5 +38,4 @@ function highlightActive() {
 
 document.addEventListener("DOMContentLoaded", function () {
     highlightActive();
-	alert(window.location.pathname);
 });
