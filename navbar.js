@@ -38,4 +38,5 @@ function highlightActive() {
 
 document.addEventListener("DOMContentLoaded", function () {
     highlightActive();
+	alert(window.location.pathname);
 });
