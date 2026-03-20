@@ -1,0 +1,235 @@
+
+html {
+	background-repeat: repeat;
+	font-family: Helvetica;
+
+  /*background-image: linear-gradient(to right, rgba(200,200,200,1), rgba(255,0,0,0));*/
+}
+
+#main	{
+	align-self: center;
+
+  
+  max-width: 90rem;
+  min-height: 45rem;
+
+  margin: 0rem auto;   /* centers */
+  margin-top: -2rem;
+  background: white;
+  
+	padding: 3rem 0rem 15rem 0.2rem;
+	background-color:white;
+
+  border-left: solid;
+  border-left-width: 0.5rem;
+  border-color: #333333;
+
+}
+
+#leftback {
+  width: 40%;
+  background-color: red;
+}
+
+
+#main h1, h2, h3, p, img, address	{
+  margin-left: 1rem;
+}
+
+nav-bar {
+  align-self: center;
+  position: fixed;
+  margin: auto;   /* centers */
+  margin-top: 2rem;
+  width: 100%;
+}
+
+#navcontainer {
+  width: auto;
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+  background-color: #333333;
+}
+
+#navlistholder {
+  max-width: 90rem;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+nav-bar ul {
+
+  list-style-type: none;
+  margin: 0;
+  margin-top: -0.5rem;
+  padding: 0;
+  width: 100%;
+  display: flex;
+}
+
+nav-bar ul li a {
+  display: block;
+  color: white;
+  padding: 1rem 1.5rem;
+  text-decoration: none;
+}
+
+nav-bar ul li a:hover {
+  background-color: #111111;
+}
+
+nav-bar ul li a:hover:not(.nav_active) {
+  background-color: #111111;
+}
+
+nav-bar ul li a#nav_active {
+   text-decoration-line: underline;
+   text-decoration-thickness: 0.25rem;
+
+   color: darkkhaki;
+   text-decoration-color: darkkhaki;
+}
+
+nav-bar p {
+
+  margin: 0;
+  margin-top: -0.5rem;
+  padding: 0;
+  width: 100%;
+  display: flex;
+}
+
+
+h1 {
+	font-size: 3.75rem;
+  margin-bottom: 1rem;
+  margin-top: 3rem;
+}
+
+h2 {
+  font-size: 2.75rem;
+  margin-bottom: -1rem;
+
+  border-bottom: dotted;
+  border-width: 0.1rem;
+  border-color: #666666;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: 500;
+
+  margin-bottom: 0.2rem;
+}
+
+
+p {
+  line-height: 1.4;
+
+  font-size: 1.2rem;
+  font-weight: 300;
+
+}
+
+address {
+  margin-left: 1.5rem;
+  font-style: normal;
+  font-size: 1.5rem;
+}
+
+#banner_holder {
+  width: 100%;
+
+  display: flex;
+  align-items: flex-start;
+}
+
+#banner {
+  background-color: DarkKhaki;
+
+  margin: 0 auto;   /* centers */
+  text-align: center;
+
+  width: 100%;
+  height: 1rem;
+}
+
+.sub_site {
+  padding-left: 0.75rem;
+
+  border-bottom: dotted;
+  border-width: 0.1rem;
+  border-color: #666666;
+
+  position: relative;
+  width: 40rem;
+}
+
+.sub_banner {
+  border-radius: 2rem;
+  margin-bottom: 25px;
+
+  height: 20rem;
+  width: 40rem;
+
+  clip-path: polygon(
+    20rem 0,        /* top edge starts after cut */
+    100% 0,
+    100% 100%,
+    0 100%,
+    0 10rem         /* left edge starts after cut */
+  );
+
+  display: block;
+}
+
+.sub_corner {
+  position: absolute;
+  top: 4rem;
+  left: 2rem;
+  width: 7rem;
+  height: 7rem;
+}
+
+.banner_link {
+  width: 10%;
+}
+
+
+
+
+
+
+footer {
+  align-self: center;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+
+
+  margin: auto;   /* centers */
+  margin-left: -0.5rem;
+  padding-right: 1rem;
+  padding-top: 0rem;
+  
+
+  color: white;
+
+  background-color: #333333;
+}
+
+footer p {
+  max-width: 90rem;
+  margin: 0rem auto;   /* centers */
+  padding-left: 3rem;
+  
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
+
+  font-size: 1rem;
+}
+
+footer p::before {
+  content: "Yakim Pty Ldt. All rights reserved.";
+}
