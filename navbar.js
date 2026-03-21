@@ -1,9 +1,12 @@
 class NavBar extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
-        <nav class="navbar">
+        <nav>
         <div id="navcontainer">
         <div id="navlistholder">
+        <a href="index.html">
+        <img class="mainicon" src="YakimIcon.png" alt="Lion Icon" width="70rem" height="70rem">
+        </a>
         <ul>
             <li><a id="nav_default" href="index.html">Home</a></li>
             <li><a href="contact.html">Contact Us</a></li>
@@ -38,4 +41,5 @@ function highlightActive() {
 
 document.addEventListener("DOMContentLoaded", function () {
     highlightActive();
+    document.getElementsByTagName('head')[0].innerHTML += `<link rel="icon" type="image/x-icon" href="PlainIcon.ico"></link>`;
 });
