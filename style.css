@@ -40,8 +40,14 @@ nav-bar {
   align-self: center;
   position: fixed;
   margin: auto;   /* centers */
-  margin-top: 2rem;
+  margin-top: 1.5rem;
   width: 100%;
+}
+
+.mainicon {
+  display: inline-block;
+  padding: 0.2rem;
+  margin: -1rem;
 }
 
 #navcontainer {
@@ -55,13 +61,15 @@ nav-bar {
   max-width: 90rem;
   margin: 0 auto;
   padding: 0 16px;
+
+  display: flex;
+  align-items: center; /*vertical*/
 }
 
 nav-bar ul {
 
   list-style-type: none;
   margin: 0;
-  margin-top: -0.5rem;
   padding: 0;
   width: 100%;
   display: flex;
